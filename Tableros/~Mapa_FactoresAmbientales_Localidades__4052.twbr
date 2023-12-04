@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='localidad_factoresambientales.csv (Varias conexiones)' inline='true' name='federated.1vcmo9n0409emq0zy1dh1194tv6g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localidad_factoresambientales' name='textscan.1tlqrap1gzuu4m1f0qyoo0e33gdw'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/paula/OneDrive - Universidad de los Andes/UNIANDES/6to SEMESTRE/BI - FABIAN PEÑA/Proyecto/2/mapa_localidades/localidad_factoresambientales.csv' dataRefreshTime='' directory='C:/Users/paula/OneDrive - Universidad de los Andes/UNIANDES/6to SEMESTRE/BI - FABIAN PEÑA/Proyecto/2/mapa_localidades' filename='C:/Users/paula/AppData/Local/Temp/TableauTemp/1m51nqm0zfbv1816corrg12zpzhb/localidad_factoresambientales.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='poligonos-localidades' name='ogrdirect.04e8hi80wrdq8s13x7qk3093oe31'>
+            <connection class='ogrdirect' directory='C:/Users/paula/OneDrive - Universidad de los Andes/UNIANDES/6to SEMESTRE/BI - FABIAN PEÑA/Proyecto/2/mapa_localidades/poligonos-localidades' filename='poligonos-localidades.shp' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1tlqrap1gzuu4m1f0qyoo0e33gdw' name='localidad_factoresambientales.csv' table='[C:\Users\paula\OneDrive - Universidad de los Andes\UNIANDES\6to SEMESTRE\BI - FABIAN PEÑA\Proyecto\2\mapa_localidades\localidad_factoresambientales#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:D23:no:A1:D23:1' header='yes' locale='es_CO' separator=';'>
+            <column datatype='string' name='localidad' ordinal='0' />
+            <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+            <column datatype='integer' name='basuras_2017' ordinal='2' />
+            <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1tlqrap1gzuu4m1f0qyoo0e33gdw' name='localidad_factoresambientales.csv' table='[C:\Users\paula\OneDrive - Universidad de los Andes\UNIANDES\6to SEMESTRE\BI - FABIAN PEÑA\Proyecto\2\mapa_localidades\localidad_factoresambientales#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:D23:no:A1:D23:1' header='yes' locale='es_CO' separator=';'>
+              <column datatype='string' name='localidad' ordinal='0' />
+              <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+              <column datatype='integer' name='basuras_2017' ordinal='2' />
+              <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.04e8hi80wrdq8s13x7qk3093oe31' name='poligonos-localidades.shp' table='[poligonos-localidades.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='Nombre_de_l' ordinal='0' />
+              <column datatype='string' name='Acto_admini' ordinal='1' />
+              <column datatype='string' name='Area_de_la_' ordinal='2' />
+              <column datatype='string' name='Identificad' ordinal='3' />
+              <column datatype='spatial' name='Geometry' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[localidad_factoresambientales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D23:no:A1:D23:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_CO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>localidad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[localidad]</local-name>
+            <parent-name>[localidad_factoresambientales.csv]</parent-name>
+            <remote-alias>localidad</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contaminacion_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contaminacion_2017]</local-name>
+            <parent-name>[localidad_factoresambientales.csv]</parent-name>
+            <remote-alias>contaminacion_2017</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basuras_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[basuras_2017]</local-name>
+            <parent-name>[localidad_factoresambientales.csv]</parent-name>
+            <remote-alias>basuras_2017</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noalcantarillado_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noalcantarillado_2017]</local-name>
+            <parent-name>[localidad_factoresambientales.csv]</parent-name>
+            <remote-alias>noalcantarillado_2017</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre_de_l</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre_de_l]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Nombre_de_l</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acto_admini</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acto_admini]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Acto_admini</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area_de_la_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area_de_la_]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Area_de_la_</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Identificad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Identificad]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Identificad</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>8</ordinal>
+            <caption>Geometría</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Acto admini' datatype='string' name='[Acto_admini]' role='dimension' type='nominal' />
+      <column caption='Area de la' datatype='string' name='[Area_de_la_]' role='dimension' type='nominal' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='Nombre de l' datatype='string' name='[Nombre_de_l]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='localidad_factoresambientales.csv' datatype='table' name='[__tableau_internal_object_id__].[localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='poligonos-localidades.shp' datatype='table' name='[__tableau_internal_object_id__].[poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99]' role='measure' type='quantitative' />
+      <column caption='Basuras 2017' datatype='integer' name='[basuras_2017]' role='measure' type='quantitative' />
+      <column caption='Contaminacion 2017' datatype='integer' name='[contaminacion_2017]' role='measure' type='quantitative' />
+      <column caption='Localidad' datatype='string' name='[localidad]' role='dimension' type='nominal' />
+      <column caption='Noalcantarillado 2017' datatype='integer' name='[noalcantarillado_2017]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='localidad_factoresambientales.csv' id='localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B'>
+            <properties context=''>
+              <relation connection='textscan.1tlqrap1gzuu4m1f0qyoo0e33gdw' name='localidad_factoresambientales.csv' table='[C:\Users\paula\OneDrive - Universidad de los Andes\UNIANDES\6to SEMESTRE\BI - FABIAN PEÑA\Proyecto\2\mapa_localidades\localidad_factoresambientales#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:D23:no:A1:D23:1' header='yes' locale='es_CO' separator=';'>
+                  <column datatype='string' name='localidad' ordinal='0' />
+                  <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+                  <column datatype='integer' name='basuras_2017' ordinal='2' />
+                  <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='poligonos-localidades.shp' id='poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99'>
+            <properties context=''>
+              <relation connection='ogrdirect.04e8hi80wrdq8s13x7qk3093oe31' name='poligonos-localidades.shp' table='[poligonos-localidades.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='Nombre_de_l' ordinal='0' />
+                  <column datatype='string' name='Acto_admini' ordinal='1' />
+                  <column datatype='string' name='Area_de_la_' ordinal='2' />
+                  <column datatype='string' name='Identificad' ordinal='3' />
+                  <column datatype='spatial' name='Geometry' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[localidad]' />
+              <expression op='[Nombre_de_l]' />
+            </expression>
+            <first-end-point object-id='localidad_factoresambientales.csv_55EA11379B36426195D5E57A1AEBE74B' />
+            <second-end-point object-id='poligonos-localidades.shp_AC27912B56294AF0A055BA75B8A92A99' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='poligonos-localidades.shp (Varias conexiones)' inline='true' name='federated.1gsosn31ucdbjh1fb36ki1593mh9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='poligonos-localidades' name='ogrdirect.15ur0zx0ef42g513u1h7u0r7mex5'>
+            <connection class='ogrdirect' directory='C:/Users/juanc/git/Proyecto-2-BI/data/mapa_localidades/poligonos-localidades' filename='poligonos-localidades.shp' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='localidad_factoresambientales' name='excel-direct.1vn3wn90gf2a0k1fuiz6y1krh1zk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/juanc/git/Proyecto-2-BI/data/mapa_localidades/localidad_factoresambientales.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='localidad_factoresambientales_2021' name='excel-direct.0j3umx81jjfkmk16mww1a018pkgn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/juanc/git/Proyecto-2-BI/data/mapa_localidades/localidad_factoresambientales_2021.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0j3umx81jjfkmk16mww1a018pkgn' name='Hoja11' table='[Hoja1$]' type='table'>
+          <columns gridOrigin='A1:D22:no:A1:D22:0' header='yes' outcome='6'>
+            <column datatype='string' name='localidad' ordinal='0' />
+            <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+            <column datatype='integer' name='basuras_2017' ordinal='2' />
+            <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='ogrdirect.15ur0zx0ef42g513u1h7u0r7mex5' name='poligonos-localidades.shp' table='[poligonos-localidades.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='Nombre_de_l' ordinal='0' />
+              <column datatype='string' name='Acto_admini' ordinal='1' />
+              <column datatype='string' name='Area_de_la_' ordinal='2' />
+              <column datatype='string' name='Identificad' ordinal='3' />
+              <column datatype='spatial' name='Geometry' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0j3umx81jjfkmk16mww1a018pkgn' name='Hoja11' table='[Hoja1$]' type='table'>
+            <columns gridOrigin='A1:D22:no:A1:D22:0' header='yes' outcome='6'>
+              <column datatype='string' name='localidad' ordinal='0' />
+              <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+              <column datatype='integer' name='basuras_2017' ordinal='2' />
+              <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1vn3wn90gf2a0k1fuiz6y1krh1zk' name='Hoja1' table='[Hoja1$]' type='table'>
+            <columns gridOrigin='A1:D23:no:A1:D23:0' header='yes' outcome='6'>
+              <column datatype='string' name='localidad' ordinal='0' />
+              <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+              <column datatype='integer' name='basuras_2017' ordinal='2' />
+              <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Acto_admini]' value='[poligonos-localidades.shp].[Acto_admini]' />
+          <map key='[Area_de_la_]' value='[poligonos-localidades.shp].[Area_de_la_]' />
+          <map key='[Geometry]' value='[poligonos-localidades.shp].[Geometry]' />
+          <map key='[Identificad]' value='[poligonos-localidades.shp].[Identificad]' />
+          <map key='[Nombre_de_l]' value='[poligonos-localidades.shp].[Nombre_de_l]' />
+          <map key='[basuras_2017 (Hoja11)]' value='[Hoja11].[basuras_2017]' />
+          <map key='[basuras_2017]' value='[Hoja1].[basuras_2017]' />
+          <map key='[contaminacion_2017 (Hoja11)]' value='[Hoja11].[contaminacion_2017]' />
+          <map key='[contaminacion_2017]' value='[Hoja1].[contaminacion_2017]' />
+          <map key='[localidad (Hoja1)]' value='[Hoja1].[localidad]' />
+          <map key='[localidad]' value='[Hoja11].[localidad]' />
+          <map key='[noalcantarillado_2017 (Hoja11)]' value='[Hoja11].[noalcantarillado_2017]' />
+          <map key='[noalcantarillado_2017]' value='[Hoja1].[noalcantarillado_2017]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D22:no:A1:D22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D23:no:A1:D23:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre_de_l</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre_de_l]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Nombre_de_l</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acto_admini</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acto_admini]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Acto_admini</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area_de_la_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area_de_la_]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Area_de_la_</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Identificad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Identificad]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Identificad</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[poligonos-localidades.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>localidad</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[localidad]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>localidad</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_74CC91A3F47D43198704E9D321A6CBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contaminacion_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contaminacion_2017 (Hoja11)]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>contaminacion_2017</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_74CC91A3F47D43198704E9D321A6CBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basuras_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[basuras_2017 (Hoja11)]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>basuras_2017</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_74CC91A3F47D43198704E9D321A6CBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noalcantarillado_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noalcantarillado_2017 (Hoja11)]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>noalcantarillado_2017</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_74CC91A3F47D43198704E9D321A6CBB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>localidad</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[localidad (Hoja1)]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>localidad</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contaminacion_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contaminacion_2017]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>contaminacion_2017</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basuras_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[basuras_2017]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>basuras_2017</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noalcantarillado_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noalcantarillado_2017]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>noalcantarillado_2017</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Acto admini' datatype='string' name='[Acto_admini]' role='dimension' type='nominal' />
+      <column caption='Area de la' datatype='string' name='[Area_de_la_]' role='dimension' type='nominal' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='localidad' datatype='string' name='[Nombre_de_l]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hoja11' datatype='table' name='[__tableau_internal_object_id__].[Hoja1_74CC91A3F47D43198704E9D321A6CBB4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hoja1' datatype='table' name='[__tableau_internal_object_id__].[Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='poligonos-localidades.shp' datatype='table' name='[__tableau_internal_object_id__].[poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D]' role='measure' type='quantitative' />
+      <column caption='basuras 2017 (Hoja11)' datatype='integer' name='[basuras_2017 (Hoja11)]' role='measure' type='quantitative' />
+      <column caption='Basuras 2017' datatype='integer' name='[basuras_2017]' role='measure' type='quantitative' />
+      <column caption='contaminacion 2017 (Hoja11)' datatype='integer' name='[contaminacion_2017 (Hoja11)]' role='measure' type='quantitative' />
+      <column caption='Contaminacion 2017' datatype='integer' name='[contaminacion_2017]' role='measure' type='quantitative' />
+      <column caption='Localidad' datatype='string' name='[localidad]' role='dimension' type='nominal' />
+      <column caption='noalcantarillado 2017 (Hoja11)' datatype='integer' name='[noalcantarillado_2017 (Hoja11)]' role='measure' type='quantitative' />
+      <column caption='Noalcantarillado 2017' datatype='integer' name='[noalcantarillado_2017]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='country, state' />
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Colombia&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Hoja11' id='Hoja1_74CC91A3F47D43198704E9D321A6CBB4'>
+            <properties context=''>
+              <relation connection='excel-direct.0j3umx81jjfkmk16mww1a018pkgn' name='Hoja11' table='[Hoja1$]' type='table'>
+                <columns gridOrigin='A1:D22:no:A1:D22:0' header='yes' outcome='6'>
+                  <column datatype='string' name='localidad' ordinal='0' />
+                  <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+                  <column datatype='integer' name='basuras_2017' ordinal='2' />
+                  <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Hoja1' id='Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD'>
+            <properties context=''>
+              <relation connection='excel-direct.1vn3wn90gf2a0k1fuiz6y1krh1zk' name='Hoja1' table='[Hoja1$]' type='table'>
+                <columns gridOrigin='A1:D23:no:A1:D23:0' header='yes' outcome='6'>
+                  <column datatype='string' name='localidad' ordinal='0' />
+                  <column datatype='integer' name='contaminacion_2017' ordinal='1' />
+                  <column datatype='integer' name='basuras_2017' ordinal='2' />
+                  <column datatype='integer' name='noalcantarillado_2017' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='poligonos-localidades.shp' id='poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D'>
+            <properties context=''>
+              <relation connection='ogrdirect.15ur0zx0ef42g513u1h7u0r7mex5' name='poligonos-localidades.shp' table='[poligonos-localidades.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='Nombre_de_l' ordinal='0' />
+                  <column datatype='string' name='Acto_admini' ordinal='1' />
+                  <column datatype='string' name='Area_de_la_' ordinal='2' />
+                  <column datatype='string' name='Identificad' ordinal='3' />
+                  <column datatype='spatial' name='Geometry' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Nombre_de_l]' />
+              <expression op='[localidad]' />
+            </expression>
+            <first-end-point object-id='poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D' />
+            <second-end-point object-id='Hoja1_74CC91A3F47D43198704E9D321A6CBB4' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Nombre_de_l]' />
+              <expression op='[localidad (Hoja1)]' />
+            </expression>
+            <first-end-point object-id='poligonos-localidades.shp_27DCDBDBC8B149A1B465539368B88E0D' />
+            <second-end-point object-id='Hoja1_E1F53F5A87894EF0A0D8C855C9364DFD' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Factores Ambientales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ff5500'>Incidencia de Factores Ambientales en viviendas afectadas por Localidad - 2017</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='poligonos-localidades.shp (Varias conexiones)' name='federated.1gsosn31ucdbjh1fb36ki1593mh9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1gsosn31ucdbjh1fb36ki1593mh9'>
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='localidad' datatype='string' name='[Nombre_de_l]' role='dimension' type='nominal' />
+            <column-instance column='[basuras_2017]' derivation='Attribute' name='[attr:basuras_2017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[contaminacion_2017]' derivation='Attribute' name='[attr:contaminacion_2017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[noalcantarillado_2017]' derivation='Attribute' name='[attr:noalcantarillado_2017:qk]' pivot='key' type='quantitative' />
+            <column caption='Basuras 2017' datatype='integer' name='[basuras_2017]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='Contaminacion 2017' datatype='integer' name='[contaminacion_2017]' role='measure' type='quantitative' />
+            <column caption='Noalcantarillado 2017' datatype='integer' name='[noalcantarillado_2017]' role='measure' type='quantitative' />
+            <column-instance column='[Nombre_de_l]' derivation='None' name='[none:Nombre_de_l:nk]' pivot='key' type='nominal' />
+            <column-instance column='[basuras_2017]' derivation='Sum' name='[sum:basuras_2017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[contaminacion_2017]' derivation='Sum' name='[sum:contaminacion_2017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[noalcantarillado_2017]' derivation='Sum' name='[sum:noalcantarillado_2017:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:basuras_2017:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>175</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:contaminacion_2017:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>293</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:noalcantarillado_2017:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>78</max>
+          </filter>
+          <slices>
+            <column>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:basuras_2017:qk]</column>
+            <column>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:noalcantarillado_2017:qk]</column>
+            <column>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[attr:contaminacion_2017:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]' field-type='quantitative' max='-8043342.9765156563' min='-8488824.5681452695' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]' field-type='quantitative' max='563767.15613517957' min='423040.66402199637' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017:qk]' max='293' min='0' num-steps='56' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:basuras_2017:qk]' />
+              <color column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017:qk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:noalcantarillado_2017:qk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[clct:Geometry:nk]' />
+              <geometry column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[clct:Geometry:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Localidad:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Contaminacion 2017:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Manejo Inadecuado Basuras 2017:	</run>
+                <run bold='true'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:basuras_2017:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No Alcantarillado 2017:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:noalcantarillado_2017:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#69aaa5' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]</rows>
+        <cols>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EFA344A3-A5CC-47F4-9957-C2C104DC4BAB}' />
+    </worksheet>
+    <worksheet name='Factores Ambientales (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ff5500'>Incidencia de Factores Ambientales en viviendas afectadas por Localidad - 2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='poligonos-localidades.shp (Varias conexiones)' name='federated.1gsosn31ucdbjh1fb36ki1593mh9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1gsosn31ucdbjh1fb36ki1593mh9'>
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='localidad' datatype='string' name='[Nombre_de_l]' role='dimension' type='nominal' />
+            <column caption='basuras 2017 (Hoja11)' datatype='integer' name='[basuras_2017 (Hoja11)]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column caption='contaminacion 2017 (Hoja11)' datatype='integer' name='[contaminacion_2017 (Hoja11)]' role='measure' type='quantitative' />
+            <column caption='noalcantarillado 2017 (Hoja11)' datatype='integer' name='[noalcantarillado_2017 (Hoja11)]' role='measure' type='quantitative' />
+            <column-instance column='[Nombre_de_l]' derivation='None' name='[none:Nombre_de_l:nk]' pivot='key' type='nominal' />
+            <column-instance column='[basuras_2017 (Hoja11)]' derivation='Sum' name='[sum:basuras_2017 (Hoja11):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[contaminacion_2017 (Hoja11)]' derivation='Sum' name='[sum:contaminacion_2017 (Hoja11):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[noalcantarillado_2017 (Hoja11)]' derivation='Sum' name='[sum:noalcantarillado_2017 (Hoja11):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]' field-type='quantitative' max='-8016201.8791573578' min='-8478025.1280643605' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]' field-type='quantitative' max='551380.12929491524' min='405491.34956497507' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017 (Hoja11):qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]' value='false' />
+            <format attr='omit-on-special' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017 (Hoja11):qk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:noalcantarillado_2017 (Hoja11):qk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:basuras_2017 (Hoja11):qk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]' />
+              <lod column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[clct:Geometry:nk]' />
+              <geometry column='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[clct:Geometry:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Localidad:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[none:Nombre_de_l:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Contaminacion 2021:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017 (Hoja11):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Manejo Inadecuado Basuras 2021:	</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:basuras_2017 (Hoja11):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No Alcantarillado 2021:&#9;</run>
+                <run fontcolor='#000000'>Æ </run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:noalcantarillado_2017 (Hoja11):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#69aaa5' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Latitude (generated)]</rows>
+        <cols>[federated.1gsosn31ucdbjh1fb36ki1593mh9].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F60BE8B2-D65D-4757-8BE3-AA23E053A010}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Mapa Factores Ambientales'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_19' value='center' />
+          <format attr='vertical-align' id='dash-text_19' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='36' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='6250' id='37' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91750' id='34' param='vert' type-v2='layout-flow' w='98400' x='800' y='7250'>
+              <zone h='91750' id='30' param='horz' type-v2='layout-flow' w='98400' x='800' y='7250'>
+                <zone h='91750' id='28' type-v2='layout-basic' w='98400' x='800' y='7250'>
+                  <zone h='45875' id='26' param='horz' type-v2='layout-flow' w='98400' x='800' y='7250'>
+                    <zone h='45875' id='24' type-v2='layout-basic' w='98400' x='800' y='7250'>
+                      <zone h='45875' id='11' name='Factores Ambientales' w='98400' x='800' y='7250'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='45875' id='27' name='Factores Ambientales (2)' w='98400' x='800' y='53125'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='40' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='6250' id='37' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='11' is-fixed='true' name='Factores Ambientales' w='98400' x='800' y='7250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='27' is-fixed='true' name='Factores Ambientales (2)' w='98400' x='800' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2E4574E5-A20F-4138-A300-6F8D4C8A9563}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='Factores Ambientales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F4ED9944-B32E-4EBB-9B37-7988E9EF3ED1}' />
+    </window>
+    <window class='worksheet' name='Factores Ambientales (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card pane-specification-id='0' param='[federated.1gsosn31ucdbjh1fb36ki1593mh9].[sum:contaminacion_2017 (Hoja11):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{063F552A-8949-41EA-BA31-5D8EC68B1D13}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Mapa Factores Ambientales'>
+      <viewpoints>
+        <viewpoint name='Factores Ambientales'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Factores Ambientales (2)'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='16' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{868F4F64-F7A7-44A5-B59E-88E8E7511951}' />
+    </window>
+  </windows>
+</workbook>
